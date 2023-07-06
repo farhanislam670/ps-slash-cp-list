@@ -32,7 +32,9 @@ class Solution:
 ## Approach 2 [Using a HashSet]
 
 ### Solution:
-
+* A better approach where you insert the elements of the list into the hash set after looking up whether that value already exists in the hashset.
+* If it already exists, you've found the duplicate and thereby return true.
+* If the list is entirely unique, the length of your hashset would equal the length of the list.
 
 ```py
 class Solution:

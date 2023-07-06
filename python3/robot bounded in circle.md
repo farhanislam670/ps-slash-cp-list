@@ -32,39 +32,10 @@ class Solution:
 ```
 
 ### Time Complexity:
+* The time complexity of this code is `O(n)` where `n` is the length of the string.
 
 ### Space Complexity:
 
-
-## Approach 2 [In Progress]
-### Solution:
-
-```py
-def isRobotBounded(self, instructions: str) -> bool:
-        my_dict = {
-            'L': 0,
-            'R': 0,
-        }
-        for i in instructions:
-            if i in my_dict:
-                my_dict[i] += 1
-    
-        if (my_dict['L'] and my_dict['R']) > 0:
-            if (my_dict['L'] % 2 == 0 and my_dict['R'] % 2 != 0) or (my_dict['L'] % 2 != 0 and my_dict['R'] % 2 == 0):
-                return False
-
-        if my_dict['L'] > 0 and my_dict['R'] == 0:
-            return True
-    
-        if my_dict['R'] > 0 and my_dict['L'] == 0:
-            return True
-    
-        return False
-```
-
-### Time Complexity:
-
-### Space Complexity:
 
 
 

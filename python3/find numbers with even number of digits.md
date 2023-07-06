@@ -12,9 +12,9 @@
 class Solution:
     def findNumbers(self, nums: List[int]) -> int:
         res = 0
-        for num in nums:
+        for num in nums: #O(n)
             cnt = 0
-            while num > 0:
+            while num > 0: #O(d)
                 num //= 10
                 cnt += 1
             if(cnt%2 == 0):
@@ -23,9 +23,10 @@ class Solution:
 ```
 
 ### Time Complexity:
-
+* The time complexity of this code is `O(n*d)`, where `n` is the number of elements in the `nums` list, and `d` is the average number of digits in an element of `nums`.
 
 ### Space Complexity:
+* The space complexity of this solution is `O(1)`.
 
 <br>
 
@@ -46,8 +47,12 @@ class Solution:
 ```
 
 ### Time Complexity:
+* The time complexity of this code is `O(n)`, where n is the number of elements in the `nums` list.
+* Converting each of the numbers in the list to the strings takes `O(1)` time, and traversing the entire list takes `O(n)` time.
+* Again, traversing the entire list takes `O(n)` time.
 
 
 ### Space Complexity:
+* The space complexity of this code is `O(1)`.
 
 

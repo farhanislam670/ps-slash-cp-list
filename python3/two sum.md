@@ -24,6 +24,25 @@ class Solution:
 
 ### Space Complexity:
 
-## Approach 2 [Using a set]
+## Approach 2 [Using a Hashmap]
 
+### Solution:
+* Instead of brute forcing it, initialize a hash map. 
+
+```py
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        hash_map = {}
+        for i in range(len(nums)):
+            if target - nums[i] in hash_map:
+                return [hash_map[target-nums[i]], i]
+            else: 
+                hash_map[nums[i]] = i
+```
+### Time Complexity:
+* The time complexity of this code is `O(n)`, `n` being the number of elements in the `nums` list.
+* In this code, a dictionary [hash_table] is used to store the elements of the nums list and their corresponding indices. The code iterates through each element in the `nums` list once using the for loop, resulting in `O(n)` iterations.
+* This lookup operation has an average time complexity of `O(1)` for a dictionary.
+
+### Space Complexity:
 
