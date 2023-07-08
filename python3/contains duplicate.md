@@ -6,7 +6,6 @@
 ## Approach 1 [Brute Force]
 
 ### Solution:
-
 Sort the list. If two consecutive values are equal, the list contains a duplicate.
 
 ```py

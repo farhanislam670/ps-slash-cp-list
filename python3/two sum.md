@@ -41,7 +41,7 @@ class Solution:
 ```
 ### Time Complexity:
 * The time complexity of this code is `O(n)`, `n` being the number of elements in the `nums` list.
-* In this code, a dictionary [hash_table] is used to store the elements of the nums list and their corresponding indices. The code iterates through each element in the `nums` list once using the for loop, resulting in `O(n)` iterations.
+* In this code, a dictionary [hash_map] is used to store the elements of the nums list and their corresponding indices. The code iterates through each element in the `nums` list once using the for loop, resulting in `O(n)` iterations.
 * This lookup operation has an average time complexity of `O(1)` for a dictionary.
 
 ### Space Complexity:
