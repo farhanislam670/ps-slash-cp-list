@@ -11,12 +11,14 @@ class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         cnt = {}
 
+        # row validation
         for sub_list in board:
             cnt = collections.Counter(sub_list)
             for(key, value) in cnt.items():
                 if value > 1 and key != '.':
                     return False 
 
+        # column validation
         for i in range(9):
             column = []
             for j in range(9):
@@ -26,6 +28,7 @@ class Solution:
                     if value > 1 and key != '.':
                         return False
 
+        # box validation
         for row in range(0, 9, 3): 
             for col in range(0, 9, 3):  
                 box = []

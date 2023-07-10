@@ -27,7 +27,8 @@ class Solution:
 ```
 
 ### Time Complexity:
-* The time complexity of the provided code is `O(nlog(n))`, where n is the length of the `nums` list.
+> The time complexity of the provided code is `O(nlog(n))`, where n is the length of the `nums` list.
+<br>
 * Constructing my_dict takes `O(n)` time, where `n` is the length of the `nums` list. 
 * Sorting `my_dict` using `sorted()` with a custom key function takes `O(nlog(n))` time. 
 * The subsequent `for` loop that appends the first `k` keys to the `indexes` list takes `O(k)` time since it iterates at most `k` times.
@@ -36,8 +37,7 @@ class Solution:
 
 
 ### Space Complexity:
-* The space complexity of the provided code is `O(n)`, where `n` is the length of the `nums` list.
-
+> The space complexity of the provided code is `O(n)`, where `n` is the length of the `nums` list.
 <br>
 
 ## Approach 1B [Cleaner code]
