@@ -5,6 +5,8 @@
 ## Approach 1 [Disgusting solution]
 
 ### Solution:
+* Initialise a dictionary i.e., `cnt` to count the frequency of elements in lists. After 
+* 
 
 ```py
 class Solution:

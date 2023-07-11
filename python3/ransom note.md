@@ -5,7 +5,7 @@
 ## Approach 1 
 
 ### Solution:
-* 
+* Since the ransomNote is made from the magazine, the magazine should contain a frequency equal or greater for each character in the ransomNote.
 
 ```py
 class Solution:
@@ -21,7 +21,7 @@ class Solution:
 ```
 
 ### Time Complexity:
-* The time complexity of the provided code is `O(N+M)`, where `N` is the length of the `ransomNote` string and `M` is the length of the `magazine` string.
+> The time complexity of the provided code is `O(N+M)`, where `N` is the length of the `ransomNote` string and `M` is the length of the `magazine` string.
 
 ### Space Complexity:
-* The space complexity of the provided code is also `O(N+M)`
+> The space complexity of the provided code is also `O(N+M)`

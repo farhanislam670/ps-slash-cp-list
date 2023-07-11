@@ -8,8 +8,8 @@
 ### Solution:
 
 * Insert the elements of the list into a dictionary and count their frequencies. 
-* Sort the dictionary by the values [not the keys] in the descending order.
-* Insert the k-most frequent elements in the result list.
+* Sort the dictionary by the values (not the keys) in the descending order. What results is a dictionary that has the the k-most frequent elements at the top of the sorted dictionary. From here, you just need to insert the top k elements from the sorted dictionary into the result array and you're good to go.
+* Insert the k-most frequent elements in the result list i.e., the top k elements .
 
 ```py
 class Solution:
@@ -23,22 +23,24 @@ class Solution:
             else:
                 my_dict[nums[i]] = 1
         sorted_dict = sorted(my_dict.items(), key=lambda item: item[1], reverse=True)
-        for item in sorted_dict:
+        for item in sorted_dict:   
             if k > 0:
                 res.append(item[0])
                 k -= 1
             else:
                 break
+        # res = [item[0] for item in sorted_dict[:k]]
+        # This is a one-liner to insert the elements into the "res" array
         return res
 ```
 
 ### Time Complexity:
-* The time complexity of this code is `O(nlog(n))`, where n is the length of the `nums` list.
+> The time complexity of this code is `O(nlog(n))`, where n is the length of the `nums` list.
+
 * Inserting the elements and their respective frequencies takes `O(n)` time as the entire list has to be traversed.
 * Sorting the dictionary takes `O(nlog(n))` time.
 * Inserting it into the result list takes `O(k)` time.
-
-> The sorting operation is the most dominant factor in this solution and hence it has `O(nlog(n))` time complexity.
+* The sorting operation is the most dominant factor in this solution and hence it has `O(nlog(n))` time complexity.
 
 ### Space Complexity:
 

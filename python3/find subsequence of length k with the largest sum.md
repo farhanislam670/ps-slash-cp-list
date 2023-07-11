@@ -5,6 +5,11 @@
 ## Approach 1
 
 ### Solution:
+* The solution boils down to retrieving the indices of the k-largest elements in a sorted manner.
+* Insert the elements into a dictionary. What's important here is that:
+> The keys of the dictionary are the indexes and the values are the `nums[i]` i.e., the actual values in the list 
+* Sort the dictionary by the values in a descending manner and now we have the k-largest elements at the top i.e., we have the index-nums[i] key-value pairs of the k-largest elements. 
+* Insert those indexes into an array. Sort them in an ascending manner and return tan array of nums[index]'es.
 
 
 ```py
@@ -12,10 +17,10 @@ class Solution:
     def maxSubsequence(self, nums: List[int], k: int) -> List[int]:
         my_dict = {}
         indexes, res= [], []
-        i = 0
-        for num in nums:
-            my_dict[i] = num
-            i += 1
+
+        for i in range(len(nums)):
+           my_dict[i] = nums[i]
+
         sorted_dict = dict(sorted(my_dict.items(), key=lambda x: x[1], reverse=True))
         for i, key in enumerate(sorted_dict.keys()):
             if i < k:
@@ -29,6 +34,7 @@ class Solution:
 ### Time Complexity:
 > The time complexity of the provided code is `O(nlog(n))`, where n is the length of the `nums` list.
 <br>
+
 * Constructing my_dict takes `O(n)` time, where `n` is the length of the `nums` list. 
 * Sorting `my_dict` using `sorted()` with a custom key function takes `O(nlog(n))` time. 
 * The subsequent `for` loop that appends the first `k` keys to the `indexes` list takes `O(k)` time since it iterates at most `k` times.
@@ -43,7 +49,7 @@ class Solution:
 ## Approach 1B [Cleaner code]
 
 ### Solution:
-
+* Similar approach as 1A.
 
 ```py
 class Solution:
