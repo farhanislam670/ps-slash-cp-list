@@ -5,7 +5,8 @@
 ## Approach 1 [Not Accepted]
 
 ### Solution:
-* 
+
+-
 
 ```py
 class Solution:
@@ -23,9 +24,10 @@ class Solution:
 ### Time Complexity:
 
 ### Space Complexity:
+
 <br>
 
-## Approach 2 
+## Approach 2
 
 ### Solution:
 
