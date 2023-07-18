@@ -27,7 +27,7 @@ class Solution:
 
 <br>
 
-## Approach 2
+## Approach 2 [Sliding Window]
 
 ### Solution:
 
