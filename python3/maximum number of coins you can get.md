@@ -19,7 +19,7 @@ class Solution:
         piles.sort()
         sum,i = 0, len(piles)-2
         num_piles = (len(piles)//3)
-        while num_piles>0:
+        while num_piles > 0:
                 sum += piles[i]
                 i -= 2
                 num_piles -= 1

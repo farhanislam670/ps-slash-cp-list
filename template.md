@@ -1,13 +1,12 @@
-# &lt;Problem Name&gt;
+#
 
-#### Problem Link: &lt;Problem Link&gt;
+#### Problem Link:
 
-
-## Approach &lt;number&gt; [&lt;Overview of solution&gt;]
+## Approach 1
 
 ### Solution:
 
-```
+```py
 
 ```
 
@@ -16,6 +15,3 @@
 ### Space Complexity:
 
 <br>
-Continued...
-
-
